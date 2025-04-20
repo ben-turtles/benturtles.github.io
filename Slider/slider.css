@@ -1,0 +1,42 @@
+#puzzle-wrapper {
+    margin: auto auto;
+    width: 90%;
+}
+
+body {
+    background-color: #d7c3cd;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.secret {
+    text-align: center;
+    color: #d7c3cd;
+    margin: auto auto;
+    display: block;
+    width: 80%;
+}
+
+.secret-button{
+    color: #d7c3cd;
+    padding: 15px;
+    border: none;
+    background-color: #d7c3cd;
+    margin: auto auto;
+    display: block;
+}
+
+.visible {
+    color: black;
+    border: 1px solid black;
+}
+
+.secret:hover {
+    cursor: pointer;
+}
+
+.tile:hover {
+    cursor: pointer;
+}
