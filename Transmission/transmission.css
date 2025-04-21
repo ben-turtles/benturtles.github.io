@@ -15,12 +15,13 @@ h1 {
 }
 
 #header {
-    height: 50vh;
+    height: 20vh;
 }
 
 #message {
     margin-inline: auto;
     width: 50vw;
+    height: 150vh;
 }
 
 /* #phone-call {
