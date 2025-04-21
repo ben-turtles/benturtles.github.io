@@ -14,6 +14,10 @@ h1 {
     margin-block: 25px;
 }
 
+#header {
+    height: 50vh;
+}
+
 #phone-call {
     height: 150vh;
 }
