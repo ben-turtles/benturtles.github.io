@@ -18,6 +18,11 @@ h1 {
     height: 50vh;
 }
 
-#phone-call {
-    height: 150vh;
+#message {
+    margin-inline: auto;
+    width: 50vw;
 }
+
+/* #phone-call {
+    height: 150vh;
+} */
