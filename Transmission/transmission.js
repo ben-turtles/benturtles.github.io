@@ -6,15 +6,11 @@ function checkPassword() {
     if (!(inputPassword.trim().length === 0)) {
         // Not whitespace, check for correctness.
         if (inputPassword.toLowerCase() === LOCATION_PASSWORD.toLowerCase()) {
-            // // Matched password!
-            // alert("yeah");
-            window.location = "location-found";
+            // Matched password!
+            window.location = "location-found-546392";
         } else {
-            // // Wrong password! Reset field.
-            // alert("no");
+            // // Wrong password, reset field.
             document.getElementById("location-password").value = "";
         }
-        // alert("check: " + inputPassword.valueOf() + ", " + (inputPassword.valueOf() === LOCATION_PASSWORD) + "..." + inputPassword.length + ", "
-    // + inputPassword.);
     }
 }
