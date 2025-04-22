@@ -1,3 +1,8 @@
+:root {
+    --button-color: rgb(177, 254, 203);
+    --button-hover: rgb(164, 239, 189);
+}
+
 @font-face {
     font-family: earwig;
     src: url("../fonts/earwig_factory/earwig factory rg.otf");
@@ -39,7 +44,7 @@ h1 {
 #message {
     margin-inline: auto;
     width: 50vw;
-    height: 30vh;
+    height: 50vh;
 }
 
 /* #phone-call {
