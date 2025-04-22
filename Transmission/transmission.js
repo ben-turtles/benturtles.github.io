@@ -14,4 +14,5 @@ window.onload = () => {
 
 function checkPassword(x, y, code) {
     alert("onclick() called");
+    window.location = "dev.html";
 }
