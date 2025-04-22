@@ -7,8 +7,9 @@ function checkPassword() {
         // not whitespace
         if (inputPassword === LOCATION_PASSWORD) {
             alert("Success!");
+        } else {
+            alert("No :(");
         }
-        alert("No :(")
     }
     // alert("onclick(): " + inputPassword);
     // window.location = "dev.html";
