@@ -6,6 +6,7 @@ function checkPassword() {
     inputPassword = inputPassword.toLowerCase();
     if (!(inputPassword.trim().length === 0)) {
         // Not whitespace, check for correctness.
+        alert("hi");
         if (inputPassword === LOCATION_PASSWORD) {
             // Matched password!
             alert("yeah");
