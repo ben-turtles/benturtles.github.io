@@ -9,13 +9,13 @@ function checkPassword() {
         if (inputPassword.valueOf() === LOCATION_PASSWORD) {
             // // Matched password!
             // alert("yeah");
-            // window.location = "location-found-394232";
+            window.location = "location-found";
         } else {
             // // Wrong password! Reset field.
             // alert("no");
-            // document.getElementById("location-password").value = "";
+            document.getElementById("location-password").value = "";
         }
-        alert("check: " + inputPassword.valueOf() + ", " + (inputPassword.valueOf() === LOCATION_PASSWORD) + "..." + inputPassword.length + ", "
-    + inputPassword.);
+        // alert("check: " + inputPassword.valueOf() + ", " + (inputPassword.valueOf() === LOCATION_PASSWORD) + "..." + inputPassword.length + ", "
+    // + inputPassword.);
     }
 }
