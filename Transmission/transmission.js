@@ -6,7 +6,7 @@ function checkPassword() {
     // inputPassword = inputPassword.toLowerCase();
     if (!(inputPassword.trim().length === 0)) {
         // Not whitespace, check for correctness.
-        alert("COMPARE: " + inputPassword.toLowerCase().localeCompare(LOCATION_PASSWORD));
+        alert("COMPARE: " + inputPassword.toLowerCase().localeCompare("WPI"));
         // if (inputPassword.valueOf() === LOCATION_PASSWORD) {
         //     // // Matched password!
         //     // alert("yeah");
