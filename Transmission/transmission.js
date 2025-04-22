@@ -6,7 +6,6 @@ function checkPassword() {
     inputPassword = inputPassword.toLowerCase();
     if (!(inputPassword.trim().length === 0)) {
         // Not whitespace, check for correctness.
-        alert("hi: " + inputPassword.valueOf() + ", " + (inputPassword.valueOf() === LOCATION_PASSWORD));
         if (inputPassword.valueOf() === LOCATION_PASSWORD) {
             // // Matched password!
             // alert("yeah");
@@ -16,5 +15,7 @@ function checkPassword() {
             // alert("no");
             // document.getElementById("location-password").value = "";
         }
+        alert("check: " + inputPassword.valueOf() + ", " + (inputPassword.valueOf() === LOCATION_PASSWORD) + "..." + inputPassword.length + ", "
+    + inputPassword.);
     }
 }
