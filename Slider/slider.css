@@ -11,6 +11,10 @@ a {
     text-decoration: none !important;
 }
 
+.a:hover {
+    cursor: pointer;
+}
+
 .secret {
     text-align: center;
     color: #d7c3cd;
@@ -19,13 +23,15 @@ a {
     width: 80%;
 }
 
+
 .secret-button{
     color: #d7c3cd;
     padding: 15px;
     border: none;
     background-color: #d7c3cd;
     margin: auto auto;
-    display: block;
+    display: inline-block;
+    font-size: 20px;
 }
 
 .visible {
@@ -33,10 +39,21 @@ a {
     border: 1px solid black;
 }
 
-.secret:hover {
+.secret-button:hover {
     cursor: pointer;
 }
 
 .tile:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .secret {
+        font-size: 30px;
+    }
+
+    .secret-button{
+        margin: 20px auto;
+        font-size: 20px;
+    }
 }

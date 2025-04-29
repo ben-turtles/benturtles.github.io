@@ -1,6 +1,6 @@
 :root {
-    --button-color: rgb(177, 254, 203);
-    --button-hover: rgb(164, 239, 189);
+    --button-color: rgb(88, 133, 76, 0.0);
+    --button-hover: rgb(88, 133, 76, 0.7);
 }
 
 @font-face {
@@ -8,14 +8,36 @@
     src: url("fonts/earwig_factory/earwig factory rg.otf");
 }
 
-body {
-    text-align: center;   
-    font-family: Helvetica, sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+body {
+    text-align: center;   
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("newpaper_flora.jpg");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 150px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+#spacer {
+    height: 150px;
+    width: 100vw;
+}
+
+.title {
     font-family: earwig;
-    font-size: 75px;
+    font-size: 65px;
     margin-block: 5px;
 }
 
@@ -29,50 +51,130 @@ h2 {
 #navbar {
     display: block;
     margin: auto auto;
-    width: 90%;
-    height: 7%;
+    width: 100%;
     text-align: center;
+    background-color: rgb(88, 133, 76, 0.6);
+    position: absolute;
+    top: 102px;
 }
 
 a {
     text-decoration: none !important;
+    display: inline-block;
 }
 
 .navbutton {
     font-size: large;
     font-weight: bold;
-    display: inline;
-    padding-inline: 10px;
-    padding-block: 10px;
+    font-family: monospace;
+    display: inline-block;
+    padding-inline: 15px;
+    padding-block: 15px;
     border: none;
-    border-radius: 4px;
     background-color: var(--button-color);
-    margin: 10px 10px;
+    margin: 0px;
 }
+
 
 .navbutton:hover {
     background-color: var(--button-hover);
     cursor: pointer;
-    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);;
-}
-
-#img {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    height: 212px;
-    width: 320px;
-    background-image: url("solarpunk.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#bouncebox {
-    height: 50vh;
-    width: 90vw;
+    /* box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);; */
 }
 
 #mission {
-    margin-inline: auto;
-    width: 50vw;
+    margin-inline: 40px;
+    width: 40%;
+    display: block;
+    min-width: 300px;
+    float: left;
+}
+
+.inner-text {
+    font-weight:bold;
+}
+
+#beliefs {
+    
+    margin-inline: 40px;
+    width: 40%;
+    display: block;
+    min-width: 350px;
+    float: right;
+}
+
+li {
+    text-align: left;
+    margin-block: 7px;
+}
+
+#lotus-thoughts {
+    margin: 20px 40px;
+    width: 40%;
+    display: block;
+    min-width: 300px;
+    float: left;
+}
+
+.signature {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 4px;
+}
+
+#sig-under {
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    #header {
+        height: 100px;
+    }
+
+    #spacer {
+        height: 130px;
+    }
+
+    .title {
+        font-family: earwig;
+        font-size: 35px;
+        margin-block: 5px;
+    }    
+
+    .navbutton {
+        font-size: 10px;
+        padding-inline: 10px;
+        padding-block: 10px;
+    }
+
+    #navbar {
+        top: 100px;
+    }
+
+    .info {
+        width: 90%;
+        margin: auto auto;
+        display: block;
+        max-width: 350px;
+    }
+
+    #mission, #beliefs, #lotus-thoughts  {
+        margin: 0 0;
+        padding-bottom: 30px;
+        width: 100%;
+        display: block;
+        min-width: 100px;
+        float: none;
+    }
+
+    h2 {
+        font-family: earwig;
+        font-size: 25px;
+        margin-block: 5px;
+        font-weight: bold;
+    }
 }
